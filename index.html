@@ -1,126 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aarsh AI Technologies - Future-ready AI, programming and technology education.">
+  <title>Aarsh AI Technologies | Future-Ready Learning</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div>
-        <nav
-            style="display: flex; justify-content: space-between; align-items: center; padding: 10px; background-color: #f0f0f0;">
-            <img src="https://aarshaitechnologies.com/assets/images/logos/logo-1.png" alt="">
-            <h2>Ed Tech</h2>
-            <ul
-                style="align-items: right; display: flex; gap: 50px; list-style-type: none; font-size: larger; font-weight: bold;">
-                <a href="index.html">
-                    <li>Home</li>
-                </a>
-                <a href="#about">
-                    <li>About</li>
-                </a>
-                <a href="#courses">
-                    <li>Courses</li>
-                </a>
-                 <a href="#why">
-                    <li>Why Us</li>
-                </a>
-                <a href="#contact">
-                    <li>Contact</li>
-                </a>
-               
-            </ul>
-            <button
-                style="background-color: #d3d1ee;color:white;font: size 20px; border-radius: 30%; padding: 10px; text-align:center;"><a
-                    href="login.html">Login</a></button>
+  <div class="progress-bar" id="progressBar"></div>
 
-        </nav>
+  <header class="header" id="home">
+    <nav class="navbar container">
+      <a class="brand" href="#home">
+        <img src="https://aarshaitechnologies.com/assets/images/logos/logo-1.png" alt="Aarsh AI Technologies logo">
+        <span>Aarsh <b>AI</b><small>Technologies</small></span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a class="active" href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#courses">Courses</a>
+        <a href="#why">Why Us</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-login" href="#contact">Login</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-bg-shape shape-one"></div>
+      <div class="hero-bg-shape shape-two"></div>
+      <div class="container hero-content">
+        <div class="hero-text reveal">
+          <span class="eyebrow"><i></i> Learn • Build • Innovate</span>
+          <h1>Empowering <span>Future Minds</span> with AI & Technology</h1>
+          <p>Learn AI, Data Science, Programming & Emerging Technologies with industry-focused learning and hands-on projects.</p>
+
+          <div class="hero-buttons">
+            <a href="#courses" class="btn btn-primary">Explore Courses <span>→</span></a>
+            <a href="#contact" class="btn btn-outline">Start Learning</a>
+          </div>
+
+          <div class="trust-row">
+            <div><strong>10+</strong><span>Tech Courses</span></div>
+            <div><strong>100+</strong><span>Learning Resources</span></div>
+            <div><strong>24/7</strong><span>Learn Anytime</span></div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="floating-card card-top">🤖 <span>AI Learning</span><b>Future Ready</b></div>
+          <div class="hero-orbit"></div>
+          <div class="code-card">
+            <div class="code-head"><span></span><span></span><span></span><b>learning.js</b></div>
+            <pre><code><span>const</span> future = {
+  skills: [<em>"AI"</em>, <em>"Java"</em>,
+           <em>"Python"</em>, <em>"Web"</em>],
+  learn: <span>true</span>,
+  build: <span>true</span>
+};
+
+<span>console</span>.log(
+  <em>"Build your future!"</em>
+);</code></pre>
+          </div>
+          <div class="floating-card card-bottom">⚡ <span>Hands-on Projects</span><b>Learn by Doing</b></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-strip">
+      <div class="container stats">
+        <div><strong>AI</strong><span>Artificial Intelligence</span></div>
+        <div><strong>ML</strong><span>Machine Learning</span></div>
+        <div><strong>DS</strong><span>Data Science</span></div>
+        <div><strong>DEV</strong><span>Web & Software Development</span></div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container two-col">
+        <div class="section-heading reveal">
+          <span class="section-tag">WHO WE ARE</span>
+          <h2>Learn skills that <span>move you forward.</span></h2>
+          <p>Aarsh AI Technologies is an innovative EdTech platform dedicated to quality education in Artificial Intelligence, Machine Learning, Data Science and Computer Technologies.</p>
+          <p>Our goal is to prepare students for future-ready careers through practical learning, real-world projects and industry-oriented skills.</p>
+          <a href="#courses" class="text-link">Discover our learning path →</a>
+        </div>
+
+        <div class="about-features reveal">
+          <div class="feature"><div class="feature-icon">🎯</div><div><h3>Career Focused</h3><p>Learn practical skills aligned with modern technology careers.</p></div></div>
+          <div class="feature"><div class="feature-icon">🧠</div><div><h3>Expert Learning</h3><p>Understand concepts through clear, structured and project-based lessons.</p></div></div>
+          <div class="feature"><div class="feature-icon">💻</div><div><h3>Build Projects</h3><p>Turn your knowledge into portfolio-ready practical projects.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="courses" class="section courses">
+      <div class="container">
+        <div class="section-title center reveal">
+          <span class="section-tag">OUR COURSES</span>
+          <h2>Choose your <span>learning path.</span></h2>
+          <p>Explore technology-focused courses designed for beginners and aspiring developers.</p>
+        </div>
+
+        <div class="course-filters reveal">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="ai">AI & Data</button>
+          <button class="filter" data-filter="programming">Programming</button>
+          <button class="filter" data-filter="development">Development</button>
+        </div>
+
+        <div class="course-grid" id="courseGrid">
+          <article class="course-card" data-category="ai">
+            <div class="course-icon purple">🤖</div><span class="level">POPULAR</span>
+            <h3>Artificial Intelligence</h3><p>AI concepts, real-world applications & practical projects.</p>
+            <div class="course-meta"><span>📚 Projects</span><span>⏱ Flexible</span></div>
+            <button class="course-btn" data-course="Artificial Intelligence">View Course →</button>
+          </article>
+
+          <article class="course-card" data-category="ai">
+            <div class="course-icon blue">🧠</div><span class="level">CAREER</span>
+            <h3>Machine Learning</h3><p>Supervised & unsupervised learning with coding and projects.</p>
+            <div class="course-meta"><span>📚 Coding</span><span>⏱ Flexible</span></div>
+            <button class="course-btn" data-course="Machine Learning">View Course →</button>
+          </article>
+
+          <article class="course-card" data-category="ai">
+            <div class="course-icon green">📊</div><span class="level">IN DEMAND</span>
+            <h3>Data Science</h3><p>Python, analytics, visualization & statistics for real problems.</p>
+            <div class="course-meta"><span>📚 Analytics</span><span>⏱ Flexible</span></div>
+            <button class="course-btn" data-course="Data Science">View Course →</button>
+          </article>
+
+          <article class="course-card" data-category="programming">
+            <div class="course-icon yellow">🐍</div><span class="level">BEGINNER</span>
+            <h3>Python Programming</h3><p>Build a strong Python foundation from beginner to advanced.</p>
+            <div class="course-meta"><span>📚 Coding</span><span>⏱ Flexible</span></div>
+            <button class="course-btn" data-course="Python Programming">View Course →</button>
+          </article>
+
+          <article class="course-card" data-category="programming">
+            <div class="course-icon orange">☕</div><span class="level">PLACEMENT</span>
+            <h3>Java & DSA</h3><p>Core Java, OOPs, problem solving & Data Structures.</p>
+            <div class="course-meta"><span>📚 DSA</span><span>⏱ Flexible</span></div>
+            <button class="course-btn" data-course="Java & DSA">View Course →</button>
+          </article>
+
+          <article class="course-card" data-category="development">
+            <div class="course-icon pink">🌐</div><span class="level">PROJECT</span>
+            <h3>Web Development</h3><p>HTML, CSS & JavaScript with responsive projects.</p>
+            <div class="course-meta"><span>📚 Projects</span><span>⏱ Flexible</span></div>
+            <button class="course-btn" data-course="Web Development">View Course →</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="why" class="section why">
+      <div class="container">
+        <div class="section-title center reveal">
+          <span class="section-tag">WHY AARSH AI?</span>
+          <h2>More than a course. <span>A launchpad.</span></h2>
+        </div>
+        <div class="why-grid">
+          <div class="why-card reveal"><span>01</span><div class="why-icon">🚀</div><h3>Industry-Oriented</h3><p>Learn skills and concepts relevant to modern technology roles.</p></div>
+          <div class="why-card reveal"><span>02</span><div class="why-icon">🛠️</div><h3>Hands-on Projects</h3><p>Practice what you learn by building meaningful projects.</p></div>
+          <div class="why-card reveal"><span>03</span><div class="why-icon">👨‍🏫</div><h3>Experienced Mentors</h3><p>Get structured guidance while you learn and build.</p></div>
+          <div class="why-card reveal"><span>04</span><div class="why-icon">💼</div><h3>Career Support</h3><p>Build confidence, projects and skills for your next opportunity.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container cta-inner reveal">
+        <div><span class="section-tag">READY TO START?</span><h2>Your future is built <span>one skill at a time.</span></h2><p>Start learning technology and turn your ideas into real projects.</p></div>
+        <a href="#contact" class="btn btn-light">Join Aarsh AI →</a>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container contact-grid">
+        <div class="contact-info reveal">
+          <span class="section-tag">GET IN TOUCH</span>
+          <h2>Let's build your <span>future.</span></h2>
+          <p>Have a question about a course or want to start learning? Send us a message and our team will get back to you.</p>
+          <div class="contact-item"><span>✉️</span><div><small>Email</small><b>info@aarshaitechnologies.com</b></div></div>
+          <div class="contact-item"><span>🌐</span><div><small>Website</small><b>aarshaitechnologies.com</b></div></div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm">
+          <div class="form-row"><input type="text" id="name" placeholder="Your Name" required><input type="email" id="email" placeholder="Your Email" required></div>
+          <input type="tel" id="phone" placeholder="Phone Number">
+          <select id="course"><option value="">Select a course</option><option>Artificial Intelligence</option><option>Machine Learning</option><option>Data Science</option><option>Python Programming</option><option>Java & DSA</option><option>Web Development</option></select>
+          <textarea id="message" placeholder="Tell us how we can help..." required></textarea>
+          <button class="btn btn-primary" type="submit">Send Message <span>→</span></button>
+          <p class="form-message" id="formMessage"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-main">
+      <div class="brand footer-brand"><img src="https://aarshaitechnologies.com/assets/images/logos/logo-1.png" alt="Aarsh AI Technologies"><span>Aarsh <b>AI</b><small>Technologies</small></span></div>
+      <p>Empowering future minds with AI & technology.</p>
+      <div class="socials"><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="GitHub">⌘</a><a href="#" aria-label="Instagram">◎</a></div>
     </div>
-    <div class="divv">
-        <h1
-            style="color: rgb(182, 13, 47);font-size:80px;font-weight: bolder;font-family: 'Times New Roman', Times, serif;">
-            <b>Empowering Future Minds with AI & Technology</b>
-        </h1><br><br>
-        <p style="color: #dad0d0; font-size:30px;">Learn AI, Data Science, Programming & Emerging Technologies with
-            Industry Experts</p><br><br><br>
-        <div class="hero-buttons">
-            <button> <a href="#courses">Explore Courses</a></button>
-            <button class="secondary">Enroll Now</button><br><br><br>
-        </div>
-    </div><br><br><br>
+    <div class="footer-bottom"><p>© <span id="year"></span> Aarsh AI Technologies. All Rights Reserved.</p><a href="#home">Back to top ↑</a></div>
+  </footer>
 
-    <section id="about" class="section">
-        <div style="text-align: center;font-weight: bolder;">
-            <h2 style="text-align: center;color: brown;">About Us</h2>
-            <p>
-                Aarsh AI Technologies is an innovative EdTech platform dedicated to
-                providing quality education in Artificial Intelligence, Machine Learning,
-                Data Science, and Computer Technologies. Our goal is to prepare students
-                for future-ready careers with hands-on learning.
-            </p>
-        </div>
+  <div class="modal" id="courseModal">
+    <div class="modal-box">
+      <button class="modal-close" id="modalClose">×</button>
+      <span class="section-tag">COURSE DETAILS</span>
+      <h2 id="modalTitle">Course</h2>
+      <p>Ready to start learning? Contact us to get course details, learning structure and enrollment information.</p>
+      <a href="#contact" class="btn btn-primary" id="modalContact">Enquire Now →</a>
+    </div>
+  </div>
 
-    </section><br><br><br>
-
-
-    <section id="courses" class="section gray">
-        <h2 style="text-align: center;color: brown;">Courses We Offer</h2>
-        <div class="card-container">
-            <div class="card">
-                <h3>Artificial Intelligence</h3>
-                <p>AI concepts, real-world applications & projects.</p>
-            </div>
-            <div class="card">
-                <h3>Machine Learning</h3>
-                <p>Supervised & unsupervised learning with coding.</p>
-            </div>
-            <div class="card">
-                <h3>Data Science</h3>
-                <p>Python, analytics, visualization & statistics.</p>
-            </div>
-            <div class="card">
-                <h3>Python Programming</h3>
-                <p>Beginner to advanced Python training.</p>
-            </div>
-            <div class="card">
-                <h3>Java & DSA</h3>
-                <p>Core Java, OOPs & Data Structures.</p>
-            </div>
-            <div class="card">
-                <h3>Web Development</h3>
-                <p>HTML, CSS, JavaScript with projects.</p>
-            </div>
-        </div>
-    </section><br><br><br>
-    <section id="why" class="section"style="text-align: center;color: brown;">
-        <h2 >Why Choose Us?</h2>
-        <ul class="why-list">
-            <li>✔ Industry-oriented curriculum</li>
-            <li>✔ Hands-on project learning</li>
-            <li>✔ Experienced mentors</li>
-            <li>✔ Affordable fees</li>
-            <li>✔ Internship & career support</li>
-        </ul>
-    </section><br><br><br>
-<section id="contact" class="section gray">
-    <h2 style="text-align: center;">Contact Us</h2>
-    <form class="contact-form">
-        <input type="text" placeholder="Your Name" required><br>
-        <input type="email" placeholder="Your Email" required><br>
-        <input type="tel" placeholder="Phone Number"><br>
-        <textarea placeholder="Your Message"></textarea><br>
-        <button type="submit">Send Message</button><br>
-    </form>
-</section><br><br><br><br><br>
-
-<footer>
-    <p>© 2025 Aarsh AI Technologies. All Rights Reserved.</p>
-</footer>
-
-
+  <button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+  <script src="script.js"></script>
 </body>
-
 </html>
